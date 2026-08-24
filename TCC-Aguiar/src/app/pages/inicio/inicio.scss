@@ -1,0 +1,129 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.pagina-inicio {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #d2fff7;
+}
+
+/* =========================
+   FEIJÃO AZUL
+   ========================= */
+
+.feijaoazul {
+  position: absolute;
+
+  left: -89%;
+  top: -0.69%;
+
+  width: 189%;
+  height: 240%;
+
+  max-width: none;
+
+  z-index: 1;
+}
+
+
+/* =========================
+   ENGRENAGEM
+   ========================= */
+
+.engrenagem {
+  position: absolute;
+
+  left: 23%;
+  top: 0.26%;
+
+  width: 6.65%;
+  height: auto;
+
+  max-width: none;
+
+  z-index: 3;
+}
+
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+   ========================= */
+
+.conteudo {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+
+  padding-top: 45px;
+}
+
+
+/* =========================
+   TÍTULO
+   ========================= */
+
+h1 {
+  margin: 0;
+
+  text-align: center;
+
+  color: #29288f;
+
+  font-family: "Gloock", serif;
+  font-size: 62px;
+  line-height: 1.15;
+  font-weight: 400;
+}
+
+
+/* =========================
+   CAIXA BRANCA
+   ========================= */
+
+.opcoes {
+  margin-top: 65px;
+
+  padding: 25px 35px;
+
+  background-color: #fffafa;
+  border-radius: 20px;
+
+  min-width: 370px;
+}
+
+
+.opcoes p {
+  margin: 8px 0 20px;
+
+  font-family: Arial, sans-serif;
+  font-size: 23px;
+
+  color: #111;
+}
+
+
+.opcoes p:last-child {
+  margin-bottom: 8px;
+}
+
+
+.opcoes a {
+  color: #29288f;
+  text-decoration: none;
+}
+
+
+.opcoes a:hover {
+  text-decoration: underline;
+}
