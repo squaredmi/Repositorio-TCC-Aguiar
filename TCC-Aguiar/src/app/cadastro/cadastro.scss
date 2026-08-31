@@ -1,0 +1,297 @@
+:host {
+
+  display: block;
+
+  width: 100%;
+
+  height: 100vh;
+
+  overflow: hidden;
+
+}
+
+
+.pagina-cadastro {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 100vh;
+
+  overflow: hidden;
+
+  background-color: #d2fff7;
+
+}
+
+
+/* =========================
+   FEIJÃO AZUL
+   ========================= */
+
+.feijaoazul {
+
+  position: absolute;
+
+  left: -89%;
+
+  top: -0.69%;
+
+  width: 189%;
+
+  height: 240%;
+
+  max-width: none;
+
+  z-index: 1;
+
+}
+
+
+/* =========================
+   ENGRENAGEM
+   ========================= */
+
+.engrenagem {
+
+  position: absolute;
+
+  left: 23%;
+
+  top: 0.26%;
+
+  width: 6.65%;
+
+  height: auto;
+
+  max-width: none;
+
+  z-index: 3;
+
+}
+
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+   ========================= */
+
+.conteudo {
+
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  height: 100%;
+
+  padding-top: 33px;
+
+}
+
+
+/* =========================
+   CAIXA BRANCA
+   ========================= */
+
+.caixa-cadastro {
+
+  width: 335px;
+
+  height: 413px;
+
+  box-sizing: border-box;
+
+  padding: 25px 36px;
+
+  background-color: #fffafa;
+
+  border-radius: 12px;
+
+}
+
+
+/* =========================
+   TÍTULO
+   ========================= */
+
+.caixa-cadastro h1 {
+
+  margin: 0;
+
+  color: #111;
+
+  font-family: "Gloock", serif;
+
+  font-size: 25px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  text-decoration: underline;
+
+  text-decoration-color: #858585;
+
+  text-decoration-thickness: 4px;
+
+  text-underline-offset: 6px;
+
+}
+
+
+/* =========================
+   LINHA ABAIXO DO TÍTULO
+   ========================= */
+
+.linha {
+
+  width: 100%;
+
+  height: 4px;
+
+  margin-top: 7px;
+
+  background-color: #858585;
+
+}
+
+
+/* =========================
+   FORMULÁRIO
+   ========================= */
+
+form {
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+form label {
+
+  margin-top: 20px;
+
+  margin-left: 5px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 15px;
+
+  color: #111;
+
+}
+
+
+form input {
+
+  width: 100%;
+
+  height: 29px;
+
+  margin-top: 4px;
+
+  padding: 0 10px;
+
+  box-sizing: border-box;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background-color: #b9b9b9;
+
+  outline: none;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 15px;
+
+}
+
+
+form input:focus {
+
+  outline: 2px solid #29288f;
+
+}
+
+
+/* =========================
+   BOTÃO
+   ========================= */
+
+button {
+
+  align-self: center;
+
+  width: 130px;
+
+  height: 32px;
+
+  margin-top: 34px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background-color: #b9b9b9;
+
+  color: #111;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+}
+
+
+button:hover {
+
+  background-color: #aaaaaa;
+
+}
+
+
+/* =========================
+   LINK PARA LOGIN
+   ========================= */
+
+.conta {
+
+  margin: 9px 0 0;
+
+  text-align: center;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 15px;
+
+  color: #111;
+
+}
+
+
+.conta a {
+
+  color: #29288f;
+
+  text-decoration: none;
+
+}
+
+
+.conta a:hover {
+
+  text-decoration: underline;
+
+}
