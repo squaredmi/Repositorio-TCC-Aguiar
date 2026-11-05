@@ -1,0 +1,97 @@
+:host {
+  display: block;
+  position: absolute;
+
+  left: 0;
+  top: 12.2vh;
+
+  width: clamp(160px, 12.3vw, 210px);
+  height: clamp(560px, 67.9vh, 760px);
+}
+
+.sidebar {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 6.3% 5%;
+
+  background-color: #fab4d5;
+  border: 2px solid #000;
+  border-radius: 0 36px 36px 0;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+
+  min-height: 48px;
+  width: 100%;
+
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(22px, 2.78vw, 40px);
+  font-weight: 700;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition: background-color 0.25s ease,
+              color 0.25s ease;
+
+  border-radius: 8px;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.sidebar a.ativo {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.sidebar a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* Sidebar horizontal em telas pequenas */
+
+@media (max-width: 700px) {
+  :host {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    width: 100%;
+    height: auto;
+    order: 1;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px;
+    overflow-x: auto;
+
+    border-radius: 20px;
+  }
+
+  .sidebar a {
+    width: auto;
+    min-height: 44px;
+    padding: 0 10px;
+
+    font-size: 15px;
+  }
+}

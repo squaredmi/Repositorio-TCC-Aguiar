@@ -1,0 +1,188 @@
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100dvh;
+}
+
+.pagina-home {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #a4c7e9;
+}
+
+/* Título */
+
+.titulo-home {
+  position: absolute;
+  top: clamp(12px, 2.44vh, 36px);
+  left: 0;
+  width: 100%;
+  margin: 0;
+
+  color: #2b2b87;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(64px, 6.67vw, 110px);
+  font-weight: 800;
+  text-align: center;
+}
+
+/* Cartão central */
+
+.cartao-quem-somos {
+  position: absolute;
+  top: clamp(150px, 16.8vh, 190px);
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: clamp(560px, 46.1vw, 850px);
+  height: clamp(450px, 58.8vh, 680px);
+  box-sizing: border-box;
+
+  padding: 0 18px;
+
+  background-color: #fffafa;
+  border-radius: 11px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cartao-quem-somos h2 {
+  margin: 36px 0 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(28px, 2.5vw, 36px);
+  font-weight: 700;
+
+  color: #000;
+  text-align: center;
+}
+
+.cartao-quem-somos p {
+  margin: 76px 0 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(24px, 2.5vw, 36px);
+  font-weight: 400;
+
+  color: #000;
+}
+
+/* Botões laterais */
+
+.botao-microfone,
+.botao-libras {
+  position: absolute;
+  right: clamp(16px, 1.25vw, 36px);
+
+  width: clamp(80px, 8.33vw, 120px);
+  height: clamp(80px, 8.33vw, 120px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 30px;
+  cursor: default;
+}
+
+.botao-microfone {
+  top: 24.3vh;
+  background-color: #f4a261;
+}
+
+.botao-libras {
+  top: 41.7vh;
+  background-color: #7960e8;
+}
+
+.botao-microfone svg,
+.botao-libras svg {
+  width: 75%;
+  height: 75%;
+}
+
+/* Telas médias */
+
+@media (max-width: 1100px) and (min-width: 701px) {
+  .cartao-quem-somos {
+    width: 58vw;
+  }
+
+  .botao-microfone,
+  .botao-libras {
+    right: 12px;
+    width: 72px;
+    height: 72px;
+  }
+
+  .cartao-quem-somos p {
+    margin-top: 45px;
+  }
+}
+
+/* Celulares e telas pequenas */
+
+@media (max-width: 700px) {
+  .pagina-home {
+    min-height: 100dvh;
+    padding: 16px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .titulo-home {
+    position: relative;
+    top: auto;
+    font-size: clamp(48px, 12vw, 72px);
+    order: 0;
+  }
+
+  .cartao-quem-somos {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    order: 2;
+
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    min-height: 350px;
+    padding: 24px;
+  }
+
+  .cartao-quem-somos h2 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .cartao-quem-somos p {
+    margin-top: 32px;
+    font-size: 20px;
+  }
+
+  .botao-microfone,
+  .botao-libras {
+    position: relative;
+    top: auto;
+    right: auto;
+
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+  }
+
+  .botao-microfone {
+    order: 3;
+  }
+
+  .botao-libras {
+    order: 4;
+  }
+}
