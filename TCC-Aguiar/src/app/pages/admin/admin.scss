@@ -1,0 +1,187 @@
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100dvh;
+}
+
+.pagina-admin {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #a4c7e9;
+}
+
+/* Caixa de confirmação */
+
+.caixa-confirmacao {
+  position: absolute;
+  top: 20vh;
+  left: 50%;
+transform: translateX(-50%);
+
+  width: 48.02vw;
+  height: 8.70vh;
+
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fffafa;
+  border-radius: 56px;
+}
+
+.caixa-confirmacao p {
+  margin: 0;
+
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+/* Caixa do formulário */
+
+.caixa-formulario {
+  position: absolute;
+  top: 31.20vh;
+  left: 50%;
+transform: translateX(-50%);
+
+  width: 28.125vw;
+  height: 36.20vh;
+
+  box-sizing: border-box;
+
+  background-color: #fffafa;
+  border-radius: 22px;
+}
+
+/* Campos de usuário e senha */
+
+.campo-usuario,
+.campo-senha {
+  position: absolute;
+  left: 5.56%;
+  width: 92.04%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-usuario {
+  top: 8.44%;
+}
+
+.campo-senha {
+  top: 46.80%;
+}
+
+.campo-usuario label,
+.campo-senha label {
+  margin-bottom: 0;
+
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.campo-usuario input,
+.campo-senha input {
+  width: 100%;
+  height: 40px;
+
+  box-sizing: border-box;
+
+  border: none;
+  outline: none;
+  border-radius: 15px;
+
+  background-color: #b9b9b9;
+
+  padding: 0 12px;
+
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+/* Botão Entrar */
+
+.botao-entrar {
+  position: absolute;
+  top: 80.82%;
+  left: 33.33%;
+
+  width: 33.33%;
+  height: 44px;
+
+  border: none;
+  border-radius: 15px;
+
+  background-color: #b9b9b9;
+
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+/* Botões de acessibilidade */
+
+.botao-microfone,
+.botao-libras {
+  position: absolute;
+  right: clamp(16px, 1.25vw, 36px);
+
+  width: clamp(80px, 8.33vw, 120px);
+  height: clamp(80px, 8.33vw, 120px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 30px;
+  cursor: default;
+}
+
+.botao-microfone {
+  top: 24.3vh;
+  background-color: #f4a261;
+}
+
+.botao-libras {
+  top: 41.7vh;
+  background-color: #7960e8;
+}
+
+.botao-microfone svg,
+.botao-libras svg {
+  width: 75%;
+  height: 75%;
+}
+/* Título */
+
+.titulo-admin {
+  position: absolute;
+  top: clamp(12px, 2.44vh, 36px);
+  left: 0;
+  width: 100%;
+
+  margin: 0;
+
+  color: #2b2b87;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(64px, 6.67vw, 110px);
+  font-weight: 800;
+
+  text-align: center;
+}

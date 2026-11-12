@@ -1,0 +1,142 @@
+
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100dvh;
+}
+
+.pagina-busca {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #a4c7e9;
+}
+
+/* Título */
+.titulo-busca {
+  position: absolute;
+  top: clamp(12px, 2.44vh, 36px);
+  left: 0;
+  width: 100%;
+  margin: 0;
+  color: #2b2b87;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(64px, 6.67vw, 110px);
+  font-weight: 800;
+  text-align: center;
+}
+
+/* Caixa explicativa */
+.caixa-explicativa {
+  position: absolute;
+  top: 22.75vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(71.94vw, 1381px);
+  height: clamp(150px, 14.65vh, 180px);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #fffafa;
+  border-radius: 56px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.caixa-explicativa p {
+  margin: 0;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(36px, 3.47vw, 50px);
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Barra de busca */
+.barra-busca {
+  position: absolute;
+  top: 43.65vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(560px, 46.1vw, 850px);
+  height: clamp(79px, 7.73vh, 100px);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0 22px 0 28px;
+  background-color: #fffafa;
+  border-radius: 36px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.barra-busca input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(26px, 2.22vw, 32px);
+  font-weight: 500;
+}
+
+.barra-busca input::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.barra-busca button {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.barra-busca button svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Botões de acessibilidade */
+.botao-microfone,
+.botao-libras {
+  position: absolute;
+  right: clamp(16px, 1.25vw, 36px);
+  width: clamp(80px, 8.33vw, 120px);
+  height: clamp(80px, 8.33vw, 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 30px;
+  cursor: default;
+}
+
+.botao-microfone {
+  top: 24.3vh;
+  background-color: #f4a261;
+}
+
+.botao-libras {
+  top: 41.7vh;
+  background-color: #7960e8;
+}
+
+.botao-microfone svg,
+.botao-libras svg {
+  width: 75%;
+  height: 75%;
+}
